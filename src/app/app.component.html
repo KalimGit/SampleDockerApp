@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+<div class="Left">
+  Do you like an Apple or Orange ? <br/><br/>
+
+<img src="../assets/images/apple.png" alt="Apple" width="80px" height="80px" (click)="castVote('apple');"/>&nbsp;&nbsp;
+<img src="../assets/images/orange.png" alt="Orange" width="80px" height="80px" (click)="castVote('orange');"/>
+</div>
+<div class="Right">
+  <div id="apple" [ngStyle]="{'width.px': (appleVote/25)*200}">{{appleVote}}
+  </div>
+  <div  id="orange" [ngStyle]="{'width.px':(orangeVote/25)*200}">{{orangeVote}}
+  </div>
+</div>
+</div>
+<router-outlet></router-outlet>
